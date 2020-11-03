@@ -1,0 +1,24 @@
+@objects
+    header          #header .middle-wrapper
+        logo            img
+        caption         h1
+    menu            #menu   .middle-wrapper
+
+
+= Header =
+    header:
+        height ~69px
+
+    header.logo:
+        inside header 0px left, 8 to 15px top bottom
+        width 48px
+        height 48px
+
+    header.caption:
+        right-of header.logo ~22px
+        text is "Sample Website for Galen Framework"
+
+= Menu =
+    menu:
+         below header 1 px
+         aligned vertically all header
